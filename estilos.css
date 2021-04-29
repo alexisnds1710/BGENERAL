@@ -1,0 +1,72 @@
+#cuerpo
+{
+    margin: 0;
+}
+
+
+header
+{
+   position: relative;
+   background-color: lightgrey;
+}
+
+.logo
+{
+    position: relative;
+    display: block;
+    width: 200px;
+    height: 100px;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    padding: 3px;
+}
+
+.desplegable
+{
+    position: absolute;
+    display: inline-block;
+    margin: 5px;
+    top: 70px;
+}
+
+.boton
+{
+    background-color: #456789;
+    color: white;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    margin-left: 3px;
+}
+
+.links a
+{
+    text-decoration: none;
+    color: black;
+    display: block;
+    padding: 6px;
+}
+
+.links
+{
+    position: absolute;
+    display: inline-block;
+    background-color: #f9f9f9;
+    display: none;
+    font-size: 14px;
+    top: 25px;
+    height: 50px;
+}
+
+.links a:hover
+{
+    background-color: #f1f1f1;
+}
+
+.boton:hover .links
+{
+    display: block;
+}
