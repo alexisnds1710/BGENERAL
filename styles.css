@@ -1,0 +1,456 @@
+body
+{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+nav
+{
+    position: fixed;
+    top: 0px;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    padding: 10px 10px;
+    box-sizing: border-box;
+    background: #E55A01;
+    transition: top 0.5s;
+}
+
+nav .logo
+{
+    padding: 0px 20px;
+    height: 80px;
+    float: left;
+}
+
+nav ul
+{
+    list-style: none;
+    margin: 0;
+    padding: 0px;
+    display: flex;
+}
+
+nav ul li button
+{
+    color: white;
+    border: none;
+    font-size: 16px;
+    height: 30px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 8px;
+    background-color: transparent;
+}
+
+.boton a
+{
+    text-decoration: none;
+    color: white;
+}
+
+section
+{
+    width: 100%;
+    height: 15vh;
+}
+
+.desplegable
+{
+    position: absolute;
+    display: inline-block;
+    margin: 5px;
+    top: 30px;
+    right: -1px;
+}
+
+.links a
+{
+    display: block;
+    color: white;
+    border: none;
+    font-size: 16px;
+    height: 20px;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    margin-left: 0px;
+    outline: none;
+    background-color: black;
+}
+
+.links
+{
+    position: absolute;
+    display: block;
+    display: none;
+    font-size: 14px;
+    top: 30px;
+    height: 10px;
+}
+
+.links a:hover
+{
+    background: rgb(17, 10, 235);
+    border-radius: 8px;
+}
+
+.boton:hover .links
+{
+    display: block;
+}
+
+.titulo
+{
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: auto;
+    text-align: center;
+    padding: 5px;
+    font-size: 25px;
+}
+
+.subtitulo
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.informacion
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 14px;
+    font-weight: normal;
+    margin: 10px;
+    padding-bottom: 10px;
+    border-bottom-style: inset;
+}
+
+.form-btn
+{
+    text-align: center;
+    padding: 7px;
+    border-style: outset;
+}
+
+
+
+.form-container span
+{
+    text-align: center;
+    font-weight: bold;
+    padding: 1 10px;
+    color:black;
+    cursor: pointer;
+    width: 150px;
+    display: inline-block;
+}
+
+#Indicator-personal
+{   
+  width: 65%;
+  border: none;
+  background: #ff523b;
+  height: 3px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateX(0px);
+}
+
+#Indicator-secundario
+{   
+  width: 65%;
+  border: none;
+  background: #42A3F5;
+  height: 3px;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateX(0px);
+}
+
+.main-info
+{
+    position: flex;
+    float: left;
+    margin: 5px;
+    margin-right: 0px;
+    display: block;
+    box-sizing: border-box;
+   /* width: 700px; */
+   width: 75%;
+    border-top-style: inset;
+}
+
+.boton-main
+{
+    border: none;
+    display: inline-block;
+    font-size: 14px;
+    padding: 10px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-color: transparent;
+    width: 100%;
+    text-align: left;
+}
+
+.img-plus
+{
+    height: 15px;
+    float: right;
+}
+
+
+.desplegable-main:focus-within .boton-main
+{
+    background: #ECCBCB;
+}
+
+
+
+.desplegable-main
+{
+    border-bottom-style: inset;
+}
+
+.info-main
+{
+    display: none;      /*--------------------------------------------VER CUAL ES MEJOR----------*/
+    margin-left: 18px;
+    font-size: 14px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   /* border-bottom-style: outset; */
+}
+
+.desplegable-main:focus-within .info-main
+{
+    display: block;
+    transition: top 1s;
+}
+
+.wrapper
+{   
+  position: flex;
+  display: inline-block;
+ /* left: 790px; */
+  /* float: right; */
+  margin-left: 20px;
+}
+
+.wrapper .slidebar
+{
+   /* display: inline-block; */
+    
+    background: #B895ED; 
+    
+}
+
+.wrapper .slidebar ul
+{
+    list-style: none;
+    padding: 0px;
+    padding-right: 5px;
+    margin-top: 2px;
+    margin-bottom: 0px;
+}
+
+.slidebar ul li a
+{
+    display: inline-block;
+    text-decoration: none;
+    color:black;
+    padding: 0px;
+    width: 100%;
+
+}
+
+.slidebar ul li
+{
+    padding-top: 7px;
+    display: block;
+   /* border-bottom-style: inset;*/
+    padding: 10px;
+    text-transform: uppercase;
+    font-size: 14px;
+    text-align: center;
+ 
+}
+
+.slidebar ul li:hover
+{
+    background: #594f8d;
+}
+
+.slidebar ul li a:hover
+{
+    color: white;
+}
+
+.subtitulo-main
+{
+
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.informacion-main
+{
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.img-sucursal
+{
+    position: flex;
+    width: 120px;
+    height: 120px;
+    float: right;
+    border-radius: 5px;
+}
+
+#separate
+{
+    border-bottom-style: outset;
+}
+
+#separate
+{
+  width: 150px;
+  border: none;
+  background: #6F99F5;
+  height: 3px;
+  margin-top: 10px;
+  margin-left: 160px;
+  transform: translateX(100px);
+}
+
+.boton-guia
+{
+    position: relative;
+    float: right;
+    width: 100px;
+    height: 25px;
+    right: 280px;
+    top: 32px;
+    border-radius: 50px;
+    background-color: #F3C6F1;
+    font-size: 14px;
+
+}
+
+.boton-guia:hover
+{
+    background: #EB84D8;
+}
+
+.form-btn button
+{
+    text-align: center;
+    font-weight: bold;
+    padding: 0;
+    color:black;
+    cursor: pointer;
+    width: auto;
+    display: inline-block;
+    background: transparent;
+    border: none;
+    font-size: 16px;
+}
+
+.links-bel
+{
+    position: absolute;
+    display: none;
+    font-size: 14px;
+    height: 10px;
+}
+
+.boton-bel
+{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.boton-bel:hover .links-bel
+{
+    display: block;
+}
+
+.links-bel a
+{
+    position: relative;
+    display: block;
+    color: black;
+    border: none;
+    font-size: 15px;
+    height: 26px;
+    padding: 10px 30px;
+    text-decoration: none;
+    margin-left: 0px;
+    outline: none;
+    background-color: white;
+    border-style: initial;
+
+}
+
+.links-bel a:hover
+{
+    background-color: #71CBF0;
+}
+
+.bm-img-cont
+{
+    float: right;
+    height: 10px;
+}
+
+.tutorials-type-container
+{
+    position: flex;
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 5px;
+    text-align: center;
+}
+
+.tutorials-type-container a
+{
+    position: relative;
+    display: inline-block;
+    margin: 5px;
+    height: 100px;
+    width: 100px;
+    background: #191b29;
+    border-radius: 10px;
+    text-decoration: none; 
+}
+
+.tutorials-type-container a div
+{
+    position: relative;
+    top: 70%;
+    color: white;
+    text-transform: uppercase;
+}
+
+.tutorials-type-container a:hover
+{
+    background-color: rgb(13, 83, 144);
+}
